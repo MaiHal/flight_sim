@@ -14,7 +14,7 @@ public class Move : MonoBehaviour {
 		if (Input.GetKey(KeyCode.Space)) {
 			//transform.position += new Vector3(0f, 0f, 0.1f);
 			Rigidbody rigidbody = GetComponent<Rigidbody>();
-			rigidbody.AddForce(0,100,0);
+			rigidbody.AddForce(0,0,10000);
 		} else {
 			
 		}
