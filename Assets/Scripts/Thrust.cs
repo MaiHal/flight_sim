@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : MonoBehaviour {
-	private Vector3 m_powerDir  = Vector3.zero;
-	// Use this for initialization
+public class Thrust: MonoBehaviour {
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		if (Input.GetKey(KeyCode.Space)) {
 			//transform.position += new Vector3(0f, 0f, 0.1f);

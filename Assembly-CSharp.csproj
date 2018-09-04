@@ -51,7 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Move.cs" />
+     <Compile Include="Assets\Scripts\AddForceMain.cs" />
+     <Compile Include="Assets\Scripts\Thrust.cs" />
      <None Include="Assets\WWII P47 Thunderbolt\aeroplanes.shader" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
