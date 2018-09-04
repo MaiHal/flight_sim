@@ -149,7 +149,7 @@ Terrain:
   m_Enabled: 1
   serializedVersion: 3
   m_TerrainData: {fileID: 15600000, guid: 3ac7837a3285b624491bbbf472ce4f2a, type: 2}
-  m_TreeDistance: 5000
+  m_TreeDistance: 2000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
@@ -281,6 +281,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3db840fa943b74925b5e41425c8a3082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: 0
+  Vz: 0
+  Vy: 0
+  latestZ: 0
+  latestY: 0
 --- !u!54 &176849912
 Rigidbody:
   m_ObjectHideFlags: 0
