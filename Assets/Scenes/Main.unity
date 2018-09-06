@@ -538,9 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  Vx: 0
-  Vy: 0
-  Vz: 0
+  velocity: {x: 0, y: 0, z: 0}
   latestX: 0
   latestY: 0
   latestZ: 0
@@ -575,7 +573,7 @@ Transform:
   m_GameObject: {fileID: 2077074162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 0.5373239, y: 0.537324, z: 0.537324}
+  m_LocalScale: {x: 1, y: 0.3, z: 0.02}
   m_Children: []
   m_Father: {fileID: 1812907910}
   m_RootOrder: 2
