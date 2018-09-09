@@ -65,6 +65,9 @@
     <Compile Include="Assets\Scripts\MainWingForce.cs" />
     <Compile Include="Assets\Scripts\Thrust.cs" />
     <None Include="Assets\WWII P47 Thunderbolt\aeroplanes.shader" />
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>C:/Users/masahiro/Documents/flight_sim/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/masahiro/Documents/flight_sim/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -73,9 +76,6 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/masahiro/Documents/flight_sim/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/masahiro/Documents/flight_sim/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

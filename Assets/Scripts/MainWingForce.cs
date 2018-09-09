@@ -8,6 +8,8 @@ public class MainWingForce : MonoBehaviour {
     Vector3 velWing;
     float aoa;
     float flowVel;
+    float cl;
+    float lift;
 
     // Use this for initialization
     void Start () {
@@ -20,6 +22,8 @@ public class MainWingForce : MonoBehaviour {
         //GetParentVelocity();
         MtAngle();
         FlowRotaion();
+        ClCalc();
+        ForceCalc();
     }
 
     void GetParentVelocity() {
@@ -34,6 +38,19 @@ public class MainWingForce : MonoBehaviour {
         velWing = Quaternion.Euler(mtangle.x, mtangle.y, mtangle.z) * (aircraft.velocity);
         aoa = -1 * Mathf.Atan2(velWing.y, velWing.z) * Mathf.Rad2Deg;
         flowVel = Mathf.Sqrt(velWing.y*velWing.y + velWing.z* velWing.z);
-        Debug.Log("flowVel:"+flowVel);
+        //Debug.Log("flowVel:"+flowVel);
     }
+    void ClCalc()
+    {
+        cl = 1;
+    }
+
+    void ForceCalc()
+    {
+        lift = 6 / 5 * 15 / 2 * cl * flowVel * flowVel;
+        Rigidbody rigidbody = GetComponent<Rigidbody>();
+        rigidbody.AddForce(0,-lift,0);
+        Debug.Log("lift:"+lift);
+    }
+
 }
